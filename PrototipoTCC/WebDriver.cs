@@ -1,10 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Opera;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 
 namespace PrototipoTCC
@@ -14,14 +12,14 @@ namespace PrototipoTCC
         internal IWebDriver startTesteRegistro()
         {
             IWebDriver driver = startBrowser();
-            driver.Url = HttpContext.Current.Request.Url.Authority + "/Registro";
+            driver.Url = HttpContext.Current.Request.Url.Authority + "/TesteUnitario";
             return driver;
         }
 
         public void AtualizaPagina(IWebDriver driver)
         {
             waitMiliSegundos(5000);
-            driver.Url = HttpContext.Current.Request.Url.Authority + "/Registro";
+            driver.Url = HttpContext.Current.Request.Url.Authority + "/TesteUnitario";
         }
         public void testeRegistroOk(IWebDriver driver)
         {
@@ -40,6 +38,37 @@ namespace PrototipoTCC
             waitMiliSegundos(1000);
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
             waitMiliSegundos(1000);
+        }
+
+        internal void TesteStress(int qtdRepeticoes)
+        {
+            IWebDriver driver =  StartDriver("/TesteStress");
+            for (int aux = 0; aux < qtdRepeticoes; aux++)
+            {
+                //ctl00$MainContent$TextBoxGenerico1
+                
+                    waitMiliSegundos(100);
+                    driver.FindElement(By.Name("ctl00$MainContent$TextBoxGenerico1")).SendKeys("Entrada Generica!");
+                    waitMiliSegundos(100);
+                    driver.FindElement(By.Name("ctl00$MainContent$TextBoxGenerico2")).SendKeys("Entrada Generica!");
+                    waitMiliSegundos(100);
+                    driver.FindElement(By.Name("ctl00$MainContent$TextBoxGenerico3")).SendKeys("Entrada Generica!");
+                    waitMiliSegundos(100);
+                    while (driver.FindElement(By.Name("ctl00$MainContent$ButtonGenerico")) == null)
+                    {
+                        Thread.Sleep(100);
+                    }
+                    driver.FindElement(By.Name("ctl00$MainContent$ButtonGenerico")).Click();
+                
+
+            }
+        }
+
+        private IWebDriver StartDriver(string linkPagina)
+        {
+            IWebDriver driver = startBrowser();
+            driver.Url = "http://localhost:62342/TesteStress";
+            return driver;
         }
 
         public void testeCampoIdade(IWebDriver driver)
@@ -229,6 +258,8 @@ namespace PrototipoTCC
             waitMiliSegundos(1000);
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
             waitMiliSegundos(1000);
+            
+            
         }
         public ChromeDriver startBrowser()
         {
@@ -272,7 +303,7 @@ namespace PrototipoTCC
         }
         public void waitMiliSegundos(int v)
         {
-            System.Threading.Thread.Sleep(v);
+            System.Threading.Thread.Sleep(v/2);
         }
     }
 }

@@ -8,16 +8,12 @@
     <meta charset="utf-8" />
     <title><%: Page.Title %></title>
 
-    
-
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-
 </head>
 <body>
-    <form runat="server">
-        
+    <form runat="server">        
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -33,7 +29,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/About">Sobre&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
                         <!--<li><a runat="server" href="~/Login">Login</a></li>-->
-                        <li><a runat="server" href="~/TestList"><b>Realizar Teste</b></a></li>
+                        <li><a runat="server" href="~/TestList"><b>Realizar Testes</b></a></li>
                         <!--<li><a runat="server" href="~/Registro" >Teste Unitário Automatizado</a></li>-->
                     </ul>
                 </div>
@@ -42,10 +38,8 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            
+            <hr />            
         </div>
-
     </form>
 </body>
 </html>

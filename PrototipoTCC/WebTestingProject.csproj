@@ -112,22 +112,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\SeleniumWebDrivers.1.0.0.4\content\DriversVersions.txt">
-      <Link>DriversVersions.txt</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\SeleniumWebDrivers.1.0.0.4\content\geckodriver.exe">
-      <Link>geckodriver.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\SeleniumWebDrivers.1.0.0.4\content\IEDriverServer.exe">
-      <Link>IEDriverServer.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\SeleniumWebDrivers.1.0.0.4\content\MicrosoftWebDriver.exe">
-      <Link>MicrosoftWebDriver.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="About.aspx" />
     <Content Include="chromedriver-license.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -151,8 +135,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="TesteStress.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Registro.aspx" />
+    <Content Include="TesteUnitario.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -225,12 +210,12 @@
     </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro.aspx.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
+    <Compile Include="TesteUnitario.aspx.cs">
+      <DependentUpon>TesteUnitario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registro.aspx.designer.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
+    <Compile Include="TesteUnitario.aspx.designer.cs">
+      <DependentUpon>TesteUnitario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -268,10 +253,17 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
     <Compile Include="WebDriver.cs" />
+    <Compile Include="TesteStress.aspx.cs">
+      <DependentUpon>TesteStress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteStress.aspx.designer.cs">
+      <DependentUpon>TesteStress.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="WindowsDesktopQuadroCodigo\" />
+    <Folder Include="WindowsDesktopPrototipo\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
