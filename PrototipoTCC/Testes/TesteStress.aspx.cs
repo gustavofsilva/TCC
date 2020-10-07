@@ -53,7 +53,12 @@ namespace PrototipoTCC
 
         protected void ButtonGenerico_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/TesteStress.aspx");
+            Response.Redirect("/Testes/TesteStress.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/TestList.aspx");
         }
     }
 }

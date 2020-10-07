@@ -1,11 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TesteUnitario.aspx.cs" Inherits="PrototipoTCC.Registro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
-            
-    
+    <br />
+    <asp:Button ID="Button2" runat="server" Text="Voltar" OnClick="Button2_Click" Font-Bold="true" BorderColor="Black" />
+    <br /><br />
+    <div style="text-align:center"><asp:Label ID="LabelTitulo" runat="server" Text="Teste Unitário" Font-Bold="true" Font-Size="29" ></asp:Label>
+    </div>       
+    <br />
+    <br />
+
     <div style="width: 100%; display: table;">
-        <div style="display: table-row">
+        <div style="display: table-row">            
             <div style="width: 600px; display: table-cell;"> 
+                
+                
+                
                 <br />
                 <br />
                 <br />
@@ -53,7 +61,7 @@
             </div>
         </div>
     </div>
-
+    
 
 
 </asp:Content>
