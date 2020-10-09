@@ -22,6 +22,24 @@ namespace PrototipoTCC {
         protected global::System.Web.UI.WebControls.Label labelTesteUnitario;
         
         /// <summary>
+        /// Controle labelExplica.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelExplica;
+        
+        /// <summary>
+        /// Controle labelExplica2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelExplica2;
+        
+        /// <summary>
         /// Controle labelTesteEstresse.
         /// </summary>
         /// <remarks>
@@ -29,6 +47,24 @@ namespace PrototipoTCC {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label labelTesteEstresse;
+        
+        /// <summary>
+        /// Controle label2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label2;
+        
+        /// <summary>
+        /// Controle label4.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label4;
         
         /// <summary>
         /// Controle label1.
