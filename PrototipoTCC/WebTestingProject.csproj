@@ -277,6 +277,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PerformanceView\PerformanceView.csproj">
+      <Project>{15BA32E4-1719-4D51-A1AC-49FB22D27D00}</Project>
+      <Name>PerformanceView</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WindowsDesktopPrototipo\WindowsDesktopQuadroCodigo.csproj">
       <Project>{0B98824E-464D-4625-B21E-2E8B16F82450}</Project>
       <Name>WindowsDesktopQuadroCodigo</Name>

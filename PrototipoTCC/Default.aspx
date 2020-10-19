@@ -11,6 +11,6 @@
         <asp:Label ID="label6" runat="server" Text="Além de garantir a qualidade do software, também diminuir o custo final do software. "></asp:Label>
     </div>
     
-    
+    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
 
 </asp:Content>

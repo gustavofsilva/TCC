@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PerformanceView.Properties
+namespace PerformanceCounter.Properties
 {
 
 

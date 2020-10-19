@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace WindowsDesktopPrototipo
+namespace PerformanceView
 {
     public partial class Form1 : Form
     {
@@ -11,7 +11,7 @@ namespace WindowsDesktopPrototipo
         public Form1()
         {
             InitializeComponent();
-            Text = "Visualizador de Código";
+            this.Text = "Visualizador de Código";
             //richTextBox1.LoadFile("C:\\Users\\PICHAU\\source\\repos\\PrototipoTCC\\WindowsDesktopPrototipo\\codigoValidacao.rtf");
             richTextBox1.LoadFile(AppDomain.CurrentDomain.BaseDirectory + "\\codigoValidacao.rtf");
         }
@@ -29,8 +29,6 @@ namespace WindowsDesktopPrototipo
         public void startForm()
         {
             CheckForIllegalCrossThreadCalls = false;
-            //Thread tr = new Thread(Show);
-            //tr.Start(tr);
             Thread _thread = new Thread(() =>
             {
                 Application.Run(new Form1());

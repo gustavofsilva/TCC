@@ -12,14 +12,14 @@ namespace PrototipoTCC
         internal IWebDriver startTesteRegistro()
         {
             IWebDriver driver = startBrowser();
-            driver.Url = HttpContext.Current.Request.Url.Authority + "/TesteUnitario";
+            driver.Url = HttpContext.Current.Request.Url.Authority + "/Testes/TesteUnitario";
             return driver;
         }
 
         public void AtualizaPagina(IWebDriver driver)
         {
             waitMiliSegundos(5000);
-            driver.Url = HttpContext.Current.Request.Url.Authority + "/TesteUnitario";
+            driver.Url = HttpContext.Current.Request.Url.Authority + "/Testes/TesteUnitario";
         }
         public void testeRegistroOk(IWebDriver driver)
         {
@@ -40,12 +40,11 @@ namespace PrototipoTCC
             waitMiliSegundos(1000);
         }
 
-        internal void TesteStress(int qtdRepeticoes)
+        internal void TesteStress(int qtdRepeticoes, IWebDriver driver)
         {
-            IWebDriver driver =  StartDriver("/TesteStress");
+            
             for (int aux = 0; aux < qtdRepeticoes; aux++)
             {
-                //ctl00$MainContent$TextBoxGenerico1
                 
                     waitMiliSegundos(100);
                     driver.FindElement(By.Name("ctl00$MainContent$TextBoxGenerico1")).SendKeys("Entrada Generica!");
@@ -54,20 +53,16 @@ namespace PrototipoTCC
                     waitMiliSegundos(100);
                     driver.FindElement(By.Name("ctl00$MainContent$TextBoxGenerico3")).SendKeys("Entrada Generica!");
                     waitMiliSegundos(100);
-                    while (driver.FindElement(By.Name("ctl00$MainContent$ButtonGenerico")) == null)
-                    {
-                        Thread.Sleep(100);
-                    }
-                    driver.FindElement(By.Name("ctl00$MainContent$ButtonGenerico")).Click();
-                
-
+                    
+                    driver.FindElement(By.Name("ctl00$MainContent$ButtonGenerico")).Click();        
             }
+            driver.Close();
         }
 
-        private IWebDriver StartDriver(string linkPagina)
+        public IWebDriver StartDriver(string linkBase, string linkPagina)
         {
             IWebDriver driver = startBrowser();
-            driver.Url = "http://localhost:62342/TesteStress";
+            driver.Url = linkBase + linkPagina; //HttpContext.Current.Request.Url.Authority + linkPagina;// + "/Testes/TesteStress";
             return driver;
         }
 
@@ -118,19 +113,6 @@ namespace PrototipoTCC
             waitMiliSegundos(1000);
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
             waitMiliSegundos(1000);
-            /*
-            waitMiliSegundos(5000);
-            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).SendKeys("luiz gustavo");
-            waitMiliSegundos(1000);
-            driver.FindElement(By.Name("ctl00$MainContent$TextBoxEmail")).SendKeys("teste@gmail.com");
-            waitMiliSegundos(1000);
-            driver.FindElement(By.Name("ctl00$MainContent$TextBoxCPF")).SendKeys("1234567890");
-            waitMiliSegundos(1000);
-            driver.FindElement(By.Name("ctl00$MainContent$TextBoxSenha")).SendKeys("12345");
-            waitMiliSegundos(1000);
-            driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
-            waitMiliSegundos(1000);
-            */
         }
 
         internal void escreveTesteCampoEmail(IWebDriver driver)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PerformanceView
+namespace PerformanceCounter
 {
     static class Program
     {

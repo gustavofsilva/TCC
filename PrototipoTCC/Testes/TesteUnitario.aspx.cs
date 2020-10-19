@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 using System.Linq;
-using WindowsDesktopPrototipo;
+using PerformanceView;
 
 namespace PrototipoTCC
 {
