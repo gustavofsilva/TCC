@@ -2,7 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     
-    <br /><br /><br /> 
+    <br /><br /><br /> <br />
+    <div style="text-align:center">
+        <asp:Label runat="server" ID="LabelTitulo" Text="Listas de Testes" Font-Size="XX-Large" Font-Bold="true" ></asp:Label>
+    </div>
+    <br />
     <div style="width: 1000px; display: table; text-align:left">
         <!-- ROW -->
         <div style="height:00px; display: table-row">

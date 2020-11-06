@@ -116,6 +116,7 @@
     <Content Include="chromedriver-license.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="imagemHomeTcc.jpg" />
     <Content Include="Logado.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Content\bootstrap-theme.css" />

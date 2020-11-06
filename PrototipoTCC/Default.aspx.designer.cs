@@ -13,15 +13,6 @@ namespace PrototipoTCC {
     public partial class _Default {
         
         /// <summary>
-        /// Controle Label4.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
-        
-        /// <summary>
         /// Controle Label1.
         /// </summary>
         /// <remarks>
@@ -67,12 +58,12 @@ namespace PrototipoTCC {
         protected global::System.Web.UI.WebControls.Label label6;
         
         /// <summary>
-        /// Controle Label7.
+        /// Controle labelLinkTeste.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label labelLinkTeste;
     }
 }

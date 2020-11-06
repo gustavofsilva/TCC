@@ -21,7 +21,7 @@ namespace PerformanceView
         {
             InitializeComponent();
 
-            Text = "Gráfico de Performance";
+            this.Text = "Gráfico de Performance";
             cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
             ramCounter = new PerformanceCounter("Memory", "Available MBytes");
 
@@ -63,15 +63,12 @@ namespace PerformanceView
                 chart1.Update();
             }
             chart1.Series[0].Points.AddXY(x++, 8000 - getAvailableRAM());
-
             chart1.Series[0].Points[chart1.Series[0].Points.Count-1].Label = (8000 - getAvailableRAM()).ToString();
 
             if (Convert.ToInt32(labelMaxResult.Text) < 8000 - getAvailableRAM())
             {
                 labelMaxResult.Text = (8000 - getAvailableRAM()).ToString();
-
             }
-
         }
 
         public void startForm()

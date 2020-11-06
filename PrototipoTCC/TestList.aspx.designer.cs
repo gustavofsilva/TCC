@@ -13,6 +13,15 @@ namespace PrototipoTCC {
     public partial class TestList {
         
         /// <summary>
+        /// Controle LabelTitulo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelTitulo;
+        
+        /// <summary>
         /// Controle labelTesteUnitario.
         /// </summary>
         /// <remarks>

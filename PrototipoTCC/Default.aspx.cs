@@ -11,7 +11,6 @@ namespace PrototipoTCC
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label7.Text = HttpContext.Current.Request.Url.Authority;
         }
     }
 }
