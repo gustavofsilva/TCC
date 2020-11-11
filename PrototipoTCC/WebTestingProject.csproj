@@ -116,7 +116,6 @@
     <Content Include="chromedriver-license.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="index.html" />
     <Content Include="imagemHomeTcc.jpg" />
     <Content Include="Logado.aspx" />
     <Content Include="Login.aspx" />
@@ -186,13 +185,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.html</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.html</DependentUpon>
-    </Compile>
     <Compile Include="Logado.aspx.cs">
       <DependentUpon>Logado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
