@@ -7,10 +7,19 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PrototipoTCC {
+namespace PrototipoTCC.Testes {
     
     
-    public partial class TestList {
+    public partial class TesteAceitacao {
+        
+        /// <summary>
+        /// Controle Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// Controle LabelTitulo.
@@ -22,111 +31,111 @@ namespace PrototipoTCC {
         protected global::System.Web.UI.WebControls.Label LabelTitulo;
         
         /// <summary>
-        /// Controle labelTesteUnitario.
+        /// Controle labelAnuncio.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelTesteUnitario;
+        protected global::System.Web.UI.WebControls.Label labelAnuncio;
         
         /// <summary>
-        /// Controle labelExplica.
+        /// Controle TextBoxNome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelExplica;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxNome;
         
         /// <summary>
-        /// Controle labelExplica2.
+        /// Controle labelNome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelExplica2;
+        protected global::System.Web.UI.WebControls.Label labelNome;
         
         /// <summary>
-        /// Controle labelTesteEstresse.
+        /// Controle TextBoxIdade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelTesteEstresse;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxIdade;
         
         /// <summary>
-        /// Controle label2.
+        /// Controle labelIdade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label2;
+        protected global::System.Web.UI.WebControls.Label labelIdade;
         
         /// <summary>
-        /// Controle label4.
+        /// Controle TextBoxAltura.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label4;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxAltura;
         
         /// <summary>
-        /// Controle label1.
+        /// Controle labelAltura.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label labelAltura;
         
         /// <summary>
-        /// Controle label5.
+        /// Controle TextBoxPartidas.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label5;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPartidas;
         
         /// <summary>
-        /// Controle label6.
+        /// Controle labelPartidas.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label6;
+        protected global::System.Web.UI.WebControls.Label labelPartidas;
         
         /// <summary>
-        /// Controle label3.
+        /// Controle TextArea1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label3;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea1;
         
         /// <summary>
-        /// Controle label7.
+        /// Controle ButtonTest.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label7;
+        protected global::System.Web.UI.WebControls.Button ButtonTest;
         
         /// <summary>
-        /// Controle label8.
+        /// Controle labelResult.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label8;
+        protected global::System.Web.UI.WebControls.Label labelResult;
     }
 }

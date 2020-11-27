@@ -9,9 +9,12 @@ namespace PrototipoTCC
     public partial class WebForm1 : System.Web.UI.Page
     {
         string url;
+
+        public string Url { get => url; set => url = value; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            url = HttpContext.Current.Request.Url.Authority;
+            Url = HttpContext.Current.Request.Url.Authority;
         }
 
         protected void ButtonComecaTeste_Click(object sender, EventArgs e)
@@ -37,7 +40,7 @@ namespace PrototipoTCC
                 Task task = Task.Factory.StartNew(() =>
                 {
                     WebDriver webDriver = new WebDriver();
-                    driver = webDriver.StartDriver(url, "/Testes/TesteStress");
+                    driver = webDriver.StartDriver(Url, "/Testes/TesteStress");
                     webDriver.TesteStress(qtdRepeticoes, driver);
                 });
             }

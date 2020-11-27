@@ -16,10 +16,10 @@ namespace PrototipoTCC
             return driver;
         }
 
-        public void AtualizaPagina(IWebDriver driver)
+        public void AtualizaPagina(IWebDriver driver, string url)
         {
             waitMiliSegundos(5000);
-            driver.Url = HttpContext.Current.Request.Url.Authority + "/Testes/TesteUnitario";
+            driver.Url = HttpContext.Current.Request.Url.Authority + url;
         }
         public void testeRegistroOk(IWebDriver driver)
         {
@@ -84,6 +84,51 @@ namespace PrototipoTCC
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
             waitMiliSegundos(1000);
         }
+
+        internal void EscreveErroIdadeAmostragem(string v, IWebDriver driver)
+        {
+            driver.FindElement(By.Name("ctl00$MainContent$TextArea1")).Clear();
+            driver.FindElement(By.Name("ctl00$MainContent$TextArea1")).SendKeys(v);
+        }
+
+        internal void FazTesteAmostragemCampoIdade(IWebDriver driver, int idade)
+        {
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).SendKeys("luiz gustavo");
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxIdade")).SendKeys(idade.ToString());
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$ctl00")).Click();
+        }
+
+        internal void FazTesteAmostragemCampoAltura(IWebDriver driver, int altura)
+        {
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).SendKeys("luiz gustavo");
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxAltura")).SendKeys(altura.ToString());
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$ctl00")).Click();
+        }
+
+        internal void LimpaCamposAmostragem(IWebDriver driver)
+        {
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).Clear();
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxIdade")).Clear();
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxAltura")).Clear();
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxPartidas")).Clear();
+        }
+
+        internal void FazTesteAmostragemCampoPartidas(IWebDriver driver, int partidas)
+        {
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).SendKeys("luiz gustavo");
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxPartidas")).SendKeys(partidas.ToString());
+            waitMiliSegundos(500);
+            driver.FindElement(By.Name("ctl00$MainContent$ctl00")).Click();
+        }
+
         public void testeCampoSenhaConfirma(IWebDriver driver)
         {
             waitMiliSegundos(1000);

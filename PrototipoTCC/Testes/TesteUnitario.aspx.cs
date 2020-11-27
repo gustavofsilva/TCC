@@ -164,41 +164,39 @@ namespace PrototipoTCC
 
             web.escreveTesteCampoNome(driver);
             web.testeCampoNomeRegistro(driver);
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.escreveTesteCampoEmail(driver);
             web.testeCampoEmailRegistro(driver);
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.escreveTesteCampoCPF(driver);
             web.testeCampoCpfRegistro(driver);
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.escreveTesteCampoSenha(driver);
             web.testeCampoSenha(driver);
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.escreveTesteCampoSenhaConfirma(driver);
             web.testeCampoSenhaConfirma(driver);
-            //web.AtualizaPagina(driver);
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.escreveTesteCampoIdade(driver);
             web.testeCampoIdade(driver);
-            web.AtualizaPagina(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.waitMiliSegundos(2000);
 
-            web.AtualizaPagina(driver);
-            //web.escreveTesteOk(driver);
+            web.AtualizaPagina(driver, "/Testes/TesteUnitario");
             web.testeRegistroOk(driver);
             web.waitMiliSegundos(2000);
         }

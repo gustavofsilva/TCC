@@ -136,7 +136,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Testes\TesteAmostragem.aspx" />
     <Content Include="Testes\TesteStress.aspx" />
+    <None Include="Properties\PublishProfiles\WebTestingProject - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Testes\TesteUnitario.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -185,6 +187,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Entidades\Atleta.cs" />
     <Compile Include="Logado.aspx.cs">
       <DependentUpon>Logado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,8 +212,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="Entidades\Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testes\TesteAmostragem.aspx.cs">
+      <DependentUpon>TesteAmostragem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testes\TesteAmostragem.aspx.designer.cs">
+      <DependentUpon>TesteAmostragem.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Testes\TesteUnitario.aspx.cs">
       <DependentUpon>TesteUnitario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,7 +274,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="WindowsDesktopPrototipo\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
