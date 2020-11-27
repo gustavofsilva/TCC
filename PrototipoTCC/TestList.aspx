@@ -89,7 +89,7 @@
                     <div style="display: table-row">            
                         <div style="width: 300px; display: table-cell;">
                             <asp:Label runat="server" ID="label3" Text="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTeste de Performance" Font-Size="Large" Font-Bold="true"></asp:Label><br />
-                            <a href="Testes/Registro.aspx">
+                            <a href="Testes/TestePerformance.aspx">
                                 &nbsp&nbsp<img src="https://cdn.discordapp.com/attachments/728046982400180248/763255656680783882/unknown.png?width=300&height=200"/>
                             </a>
                         </div>

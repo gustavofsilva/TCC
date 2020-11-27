@@ -18,7 +18,7 @@ namespace PrototipoTCC
 
         public void AtualizaPagina(IWebDriver driver, string url)
         {
-            waitMiliSegundos(5000);
+            waitMiliSegundos(1000);
             driver.Url = HttpContext.Current.Request.Url.Authority + url;
         }
         public void testeRegistroOk(IWebDriver driver)
@@ -38,6 +38,17 @@ namespace PrototipoTCC
             waitMiliSegundos(1000);
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
             waitMiliSegundos(1000);
+        }
+
+        internal void FinzalizaDriver(IWebDriver driver)
+        {
+            waitMiliSegundos(1000);
+            driver.Close();
+        }
+
+        internal void AtualizaPagina2(IWebDriver driver2, string v, string url)
+        {
+            driver2.Url = url + v;
         }
 
         internal void TesteStress(int qtdRepeticoes, IWebDriver driver)
@@ -82,6 +93,22 @@ namespace PrototipoTCC
             driver.FindElement(By.Name("ctl00$MainContent$TextBoxIdade")).SendKeys("teste");
             waitMiliSegundos(1000);
             driver.FindElement(By.Name("ctl00$MainContent$ButtonConfirma")).Click();
+            waitMiliSegundos(1000);
+        }
+        public void testeCampoIdadeUnitPerf(IWebDriver driver)
+        {
+            waitMiliSegundos(2000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxNome")).SendKeys("luiz gustavo");
+            waitMiliSegundos(1000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxEmail")).SendKeys("teste@gmail.com");
+            waitMiliSegundos(1000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxCPF")).SendKeys("1234567890");
+            waitMiliSegundos(1000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxSenha")).SendKeys("teste123");
+            waitMiliSegundos(1000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxSenhaConfirma")).SendKeys("teste123");
+            waitMiliSegundos(1000);
+            driver.FindElement(By.Name("ctl00$MainContent$TextBoxIdade")).SendKeys("teste");
             waitMiliSegundos(1000);
         }
 

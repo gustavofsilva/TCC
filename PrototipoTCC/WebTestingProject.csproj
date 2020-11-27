@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Testes\TesteAmostragem.aspx" />
+    <Content Include="Testes\TestePerformance.aspx" />
     <Content Include="Testes\TesteStress.aspx" />
     <None Include="Properties\PublishProfiles\WebTestingProject - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -220,6 +221,13 @@
     </Compile>
     <Compile Include="Testes\TesteAmostragem.aspx.designer.cs">
       <DependentUpon>TesteAmostragem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testes\TestePerformance.aspx.cs">
+      <DependentUpon>TestePerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testes\TestePerformance.aspx.designer.cs">
+      <DependentUpon>TestePerformance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Testes\TesteUnitario.aspx.cs">
       <DependentUpon>TesteUnitario.aspx</DependentUpon>
