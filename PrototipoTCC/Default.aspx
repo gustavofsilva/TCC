@@ -8,7 +8,7 @@
             <img src="imagemHomeTcc.jpg" width="1000" height="400"/><br /><br />
         </div>
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Este site foi feito para apresentar testes e qualidade de software."  Font-Size="Large"></asp:Label><br /><br /><br /><br />
+            <asp:Label ID="Label1" runat="server" Text="Este site foi feito para apresentar um pouco sobre testes de software."  Font-Size="Large"></asp:Label><br /><br /><br /><br />
 
             <asp:Label ID="Label2" runat="server" Text="Mas o que é um teste de software?" Font-Bold="true" Font-Size="Large" ></asp:Label><br />
             <asp:Label ID="Label3" runat="server" Text="É um processo que faz parte do desenvolvimento do software que tem como seu objetivo principal garantir a qualidade do software." Font-Size="Medium"></asp:Label><br /><br />
@@ -21,7 +21,6 @@
             </a>
             <br /><br />
         </div>
-        
     </div>
     
 

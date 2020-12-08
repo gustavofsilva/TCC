@@ -320,10 +320,8 @@ namespace PrototipoTCC
             if (Environment.OSVersion.ToString().Contains("Mac") || Environment.OSVersion.ToString().Contains("MacOS") || Environment.OSVersion.ToString().Contains("mac")
                 || Environment.OSVersion.ToString().Contains("macos"))
             {
-                //return new ChromeDriver("C:\\Users\\PICHAU\\source\\repos\\PrototipoTCC\\PrototipoTCC\\drivermac");
                 return new ChromeDriver(HttpRuntime.AppDomainAppPath + "\\drivermac");
             }
-            //return new ChromeDriver("C:\\Users\\PICHAU\\source\\repos\\PrototipoTCC\\PrototipoTCC\\");
             return new ChromeDriver(HttpRuntime.AppDomainAppPath);
 
 
